@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-    import TopNavigation from '@/Template/frontend/fragments/footer/Index.vue'
+    import TopNavigation from '@/Template/frontend/fragments/topNavigation/Index.vue'
     import Footer from '@/Template/frontend/fragments/footer/Index.vue'
 
     defineOptions({

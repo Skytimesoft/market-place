@@ -1,6 +1,8 @@
 <template>
     <Layout>
-        <div class="bg-red-500"></div>
+        <div class="bg-red-500">
+            hello
+        </div>
     </Layout>
 </template>
 

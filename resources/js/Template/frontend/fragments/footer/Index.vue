@@ -1,11 +1,13 @@
 <template>
     <footer>
-        Footer
+        <Logo :footer="true"/>
     </footer>
 </template>
 
 <script setup>
+    import Logo from '@/Template/frontend/fragments/Logo.vue'
+
     defineOptions({
-        name: 'footer'
+        name: 'footerComponent'
     })
 </script>

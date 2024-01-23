@@ -1,11 +1,13 @@
 <template>
     <nav>
-        Navigation
+        <Logo />
     </nav>
 </template>
 
 <script setup>
+    import Logo from '@/Template/frontend/fragments/Logo.vue'
+
     defineOptions({
-        name: 'navigation'
+        name: 'navigationComponent',
     })
 </script>
