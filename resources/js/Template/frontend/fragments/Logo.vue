@@ -1,7 +1,17 @@
 <template>
     <div>
         <Button.Native 
-            v-if="footer" 
+            v-if="!footer" 
+            to="/" 
+            class="block w-[120px]"
+        >
+            <Img
+                src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"
+            />
+        </Button.Native>
+
+        <Button.Base 
+            v-else 
             to="/" 
             class="block w-[120px]"
         >
@@ -9,14 +19,7 @@
                 class="grayscale"
                 src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"
             />
-        </Button.Native>
-        <Button.Native 
-            v-else 
-            to="/" 
-            class="block w-[120px]"
-        >
-            <Img src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"/>
-        </Button.Native>
+        </Button.Base>
     </div>
 </template>
 

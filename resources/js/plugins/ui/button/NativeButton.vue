@@ -1,33 +1,43 @@
 <template>
-    <RouterLink
+    <Link
         v-if="to"
-        class="px-3 py-1 rounded border shadow hover:shadow-lg active:scale-95 duration-300 select-none inline-flex items-center justify-center gap-2"
-        :class="loading ? 'pointer-events-none opacity-70' : ''"
+        :class="[
+            loading ? 'pointer-events-none opacity-70' : '',
+            (!isEmpty(icon) && (icon.position == 'top' || icon.position == 'bottom')) ? 'flex flex-col items-center' : ''
+        ]"
         :to="to"
     >
-        <slot></slot>
-    </RouterLink>
+        <ButtonContent
+            :icon="icon"
+            :loading="loading"
+        >
+            <slot></slot>
+        </ButtonContent>
+    </Link>
     <button 
         v-else
-        class="px-4 py-1 rounded border shadow hover:shadow-lg active:scale-95 duration-300 select-none inline-flex items-center justify-center gap-2"
-        :class="loading ? 'pointer-events-none opacity-70' : ''"
+        :class="[
+            loading ? 'pointer-events-none opacity-70' : '',
+            (!isEmpty(icon) && (icon.position == 'top' || icon.position == 'bottom')) ? 'flex flex-col items-center' : ''
+        ]"
     >
-        <slot></slot>
-        
-        <Loader 
+        <ButtonContent
+            :icon="icon"
             :loading="loading"
-            class="text-xl"
-        />
+        >
+            <slot></slot>
+        </ButtonContent>
     </button>
 </template>
 
 <script setup>
-    import { Loader } from '@/plugins/ui'
+    import { Link } from '@inertiajs/vue3'
+    import ButtonContent from './ButtonContent.vue'
+    import { isEmpty } from 'lodash'
+
     defineProps({
-        loading: {
-            type: Boolean,
-            default: false,
-        },
-        to: [Object, String]
+        loading: Boolean,
+        to: [Object, String],
+        icon: Object
     })
 </script>

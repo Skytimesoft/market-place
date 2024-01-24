@@ -1,5 +1,5 @@
 <template>
-    <Button.Native
+    <Button.Base
         :loading="loading"
         :to="to"
         :class="
@@ -9,7 +9,7 @@
             "
     >
         <slot></slot>
-    </Button.Native>
+    </Button.Base>
 </template>
 
 <script setup>

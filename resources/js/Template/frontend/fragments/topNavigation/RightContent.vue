@@ -20,8 +20,15 @@
                 </router-link>
             </li>
         </ul>
-        <Button.Primary>
-            <PhPushPin :size="16" class="-rotate-90 mr-1" />
+        <Button.Primary
+            :icon="{
+                name: 'PhPushPin',
+                size: 16,
+                color: 'lightgreen',
+                weight: 'fill',
+                spin: true
+            }"
+        >
             <span>Place advertisement</span>
         </Button.Primary>
     </div>
@@ -30,9 +37,7 @@
 <script setup>
 import { Icon, Button } from "@/plugins/ui";
 import { PhPushPin } from '@phosphor-icons/vue'
-// import PrimaryButton from '@/Components/PrimaryButton.vue';
 
-console.log(Button);
 
 const primaryMenus = [
     {
