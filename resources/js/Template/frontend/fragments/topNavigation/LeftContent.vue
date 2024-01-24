@@ -2,8 +2,16 @@
     <div class="flex gap-4 items-center">
         <Logo />
         <ul class="flex items-start">
-            <li v-for="primaryMenu of primaryMenus" :key="primaryMenu?.label" class="text-xs px-2">
-                <router-link :to="primaryMenu?.url">{{ primaryMenu?.label }}</router-link>
+            <li 
+                v-for="primaryMenu of primaryMenus" 
+                :key="primaryMenu?.label" 
+                class="text-xs px-2"
+            >
+                <Link 
+                    :href="primaryMenu?.url"
+                >
+                    {{ primaryMenu?.label }}
+                </Link>
             </li>
         </ul>
     </div>

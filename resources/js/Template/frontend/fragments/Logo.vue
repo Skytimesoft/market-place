@@ -1,23 +1,28 @@
 <template>
     <div>
-        <div v-if="footer">
+        <Button.Native 
+            v-if="footer" 
+            to="/" 
+            class="block w-[120px]"
+        >
             <Img 
                 class="grayscale"
-                width="w-[120px]"
                 src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"
             />
-        </div>
-        <div v-else>
-            <Img 
-                width="w-[120px]"
-                src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"
-            />
-        </div>
+        </Button.Native>
+        <Button.Native 
+            v-else 
+            to="/" 
+            class="block w-[120px]"
+        >
+            <Img src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"/>
+        </Button.Native>
     </div>
 </template>
 
 <script setup>
-    import { Img } from '@/plugins/ui'
+    // import { Link } from '@inertiajs/vue3'
+    import { Img, Button } from '@/plugins/ui'
 
     defineProps({
         footer: {
