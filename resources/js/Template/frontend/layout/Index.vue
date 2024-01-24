@@ -1,7 +1,9 @@
 <template>
-    <div class="border-4 border-green-500">
+    <div>
         <TopNavigation />
-        <slot></slot>
+        <main class="min-h-screen">
+            <slot></slot>
+        </main>
         <Footer />
     </div>
 </template>

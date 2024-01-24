@@ -3,8 +3,8 @@
         class="relative w-fit"
     >
         <img 
-            class="block w-full object-cover object-center"
-            :class="thumbnail && 'border-4 border-white rounded shadow'"
+            class="block object-cover object-center"
+            :class="[thumbnail && 'border-4 border-white rounded shadow', width]"
             v-bind="$attrs"
             @load="isLoading = false"
             :src="src || fallBack"
@@ -36,6 +36,10 @@
         thumbnail: {
             type: Boolean,
             default: false
+        },
+        width: {
+            type: String,
+            default: 'w-full'
         }
     })
 

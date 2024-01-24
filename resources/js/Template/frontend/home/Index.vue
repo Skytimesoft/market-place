@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <div class="bg-red-500">
+        <div class="py-20">
             hello
         </div>
     </Layout>

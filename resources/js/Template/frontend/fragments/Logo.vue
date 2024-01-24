@@ -2,13 +2,14 @@
     <div>
         <div v-if="footer">
             <Img 
-                class="w-[150px] grayscale"
+                class="grayscale"
+                width="w-[120px]"
                 src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"
             />
         </div>
         <div v-else>
             <Img 
-                class="w-[150px]"
+                width="w-[120px]"
                 src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"
             />
         </div>
