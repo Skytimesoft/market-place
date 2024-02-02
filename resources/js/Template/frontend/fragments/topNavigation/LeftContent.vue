@@ -3,15 +3,15 @@
         <Logo />
         <ul class="flex items-start">
             <li 
-                v-for="primaryMenu of primaryMenus" 
-                :key="primaryMenu?.label" 
-                class="px-2 bg-white transition-all hover:bg-gray-100"
+                v-for="leftMenu of leftMenus" 
+                :key="leftMenu?.label" 
+                class="px-2 bg-white rounded transition-all hover:bg-gray-100"
             >
                 <Link 
-                    :href="primaryMenu?.url"
+                    :href="leftMenu?.url"
                     class="text-xs text-primary"
                 >
-                    {{ primaryMenu?.label }}
+                    {{ leftMenu?.label }}
                 </Link>
             </li>
         </ul>
@@ -22,7 +22,7 @@
 import { Link } from '@inertiajs/vue3';
 import Logo from '@/Template/frontend/fragments/Logo.vue';
 
-const primaryMenus = [
+const leftMenus = [
     {
         label: 'Help & Info',
         url: '/'

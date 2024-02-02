@@ -1,6 +1,6 @@
 <template>
     <Button.Native
-        class="px-4 py-1 text-xs rounded border shadow hover:shadow-lg active:scale-95 duration-300 select-none inline-flex items-center justify-center gap-2"
+        class="px-3 py-2 text-xs rounded border shadow hover:shadow-lg active:scale-95 duration-300 select-none inline-flex items-center justify-center gap-2"
     >
         <slot></slot>
     </Button.Native>

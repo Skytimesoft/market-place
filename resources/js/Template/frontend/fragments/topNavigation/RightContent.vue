@@ -2,20 +2,20 @@
     <div class="flex gap-4 items-center">
         <ul class="flex items-start gap-1">
             <li 
-                v-for="primaryMenu of primaryMenus" 
-                :key="primaryMenu?.label" 
-                class="px-2 py-1 bg-white transition-all hover:bg-gray-100"
+                v-for="rightMenu of rightMenus" 
+                :key="rightMenu?.label" 
+                class="px-2 py-1 bg-white rounded transition-all hover:bg-gray-100"
             >
                 <Link 
-                    :to="primaryMenu?.url" 
+                    :to="rightMenu?.url" 
                     class="flex items-center gap-1"
                 >
                     <Icon 
-                        :name="primaryMenu?.icon" 
+                        :name="rightMenu?.icon" 
                         :size="16" 
                     />
                     <span class="text-xs text-primary">
-                        {{ primaryMenu?.label }}
+                        {{ rightMenu?.label }}
                     </span>
                 </Link>
             </li>
@@ -38,7 +38,7 @@
 import { Link } from '@inertiajs/vue3';
 import { Icon, Button } from "@/plugins/ui";
 
-const primaryMenus = [
+const rightMenus = [
     {
         icon: 'PhChatsCircle',
         label: 'Report',
