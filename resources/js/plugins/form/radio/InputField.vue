@@ -9,10 +9,9 @@
     />
     <label 
         :for="uid" 
-        class="flex gap-1 items-center"
-        :class="modelValue == value ? 'text-primary' : ''"
+        :class="[modelValue == value ? 'text-primary' : '', radioIconNone ? '' : 'flex gap-1 items-center', radioPadding]"
     >
-        <Icon 
+        <Icon v-if="!radioIconNone"
             :name="modelValue == value ? 'PhCheckCircle' : 'PhCircle'" size="20" 
         />
         {{ label }}
@@ -36,6 +35,13 @@
         value: {
             type: String,
             required: true
+        },
+        radioIconNone: {
+            type: Boolean,
+            default: false
+        },
+        radioPadding: {
+            type: String
         }
     })
 </script>

@@ -24,7 +24,6 @@
             :icon="{
                 name: 'PhPushPin',
                 size: 16,
-                color: '#fff',
                 weight: 'fill',
                 spin: true
             }"
@@ -35,8 +34,8 @@
 </template>
 
 <script setup>
-import { Link } from '@inertiajs/vue3';
-import { Icon, Button } from "@/plugins/ui";
+import { Link } from '@inertiajs/vue3'
+import { Icon, Button } from "@/plugins/ui"
 
 const rightMenus = [
     {

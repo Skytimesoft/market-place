@@ -1,16 +1,17 @@
 <template>
     <Layout>
-        <div class="py-20">
-            hello
-        </div>
+        <Banner />
+        <Filter />
     </Layout>
 </template>
 
 <script setup>
-    import Layout from '@/Template/frontend/layout/Index.vue'
-    import { printPrice, printDate, printString } from '@/utilities/helper.js'
+import Layout from '@/Template/frontend/layout/Index.vue'
+import Banner from './fragments/banner/Index.vue'
+import Filter from './fragments/filter/Index.vue'
+// import { printPrice, printDate, printString } from '@/utilities/helper.js'
 
-    defineOptions({
-        name: 'Home'
-    })
+defineOptions({
+    name: 'Home'
+})
 </script>

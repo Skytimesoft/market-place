@@ -7,6 +7,7 @@
         >
             <Img
                 src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"
+                alt="Logo"
             />
         </Button.Native>
 
