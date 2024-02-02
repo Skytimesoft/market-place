@@ -5,7 +5,7 @@
         :class="
             outline 
                 ? 'bg-white hover:bg-primary text-primary hover:text-white border-primary hover:border-white'
-                : 'bg-primary border-primary text-white hover:bg-white hover:text-primary'
+                : 'bg-primary border-primary text-white hover:bg-primary/90'
         "
     >
         <slot></slot>

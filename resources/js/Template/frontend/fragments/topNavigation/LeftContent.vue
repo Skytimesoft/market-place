@@ -5,10 +5,11 @@
             <li 
                 v-for="primaryMenu of primaryMenus" 
                 :key="primaryMenu?.label" 
-                class="text-xs px-2"
+                class="px-2 bg-white transition-all hover:bg-gray-100"
             >
                 <Link 
                     :href="primaryMenu?.url"
+                    class="text-xs text-primary"
                 >
                     {{ primaryMenu?.label }}
                 </Link>
@@ -18,6 +19,7 @@
 </template>
 
 <script setup>
+import { Link } from '@inertiajs/vue3';
 import Logo from '@/Template/frontend/fragments/Logo.vue';
 
 const primaryMenus = [

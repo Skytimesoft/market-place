@@ -1,12 +1,12 @@
 <template>
     <div class="flex gap-4 items-center">
-        <ul class="flex items-start">
+        <ul class="flex items-start gap-1">
             <li 
                 v-for="primaryMenu of primaryMenus" 
                 :key="primaryMenu?.label" 
-                class="px-2"
+                class="px-2 py-1 bg-white transition-all hover:bg-gray-100"
             >
-                <router-link 
+                <Link 
                     :to="primaryMenu?.url" 
                     class="flex items-center gap-1"
                 >
@@ -14,17 +14,17 @@
                         :name="primaryMenu?.icon" 
                         :size="16" 
                     />
-                    <span class="text-xs">
+                    <span class="text-xs text-primary">
                         {{ primaryMenu?.label }}
                     </span>
-                </router-link>
+                </Link>
             </li>
         </ul>
         <Button.Primary
             :icon="{
                 name: 'PhPushPin',
                 size: 16,
-                color: 'lightgreen',
+                color: '#fff',
                 weight: 'fill',
                 spin: true
             }"
@@ -35,9 +35,8 @@
 </template>
 
 <script setup>
+import { Link } from '@inertiajs/vue3';
 import { Icon, Button } from "@/plugins/ui";
-import { PhPushPin } from '@phosphor-icons/vue'
-
 
 const primaryMenus = [
     {
