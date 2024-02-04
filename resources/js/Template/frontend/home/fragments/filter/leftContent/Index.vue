@@ -74,6 +74,8 @@
 
                 </div>
             </form>
+
+            <Buttons />
         </div>
     </div>
 </template>
@@ -81,6 +83,7 @@
 <script setup>
 import { Select, Radio } from "@/plugins/form"
 import { reactive } from "vue"
+import Buttons from "./Buttons.vue"
 
 const brands = reactive([
     {

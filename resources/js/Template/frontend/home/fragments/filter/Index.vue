@@ -11,6 +11,6 @@
 </template>
 
 <script setup>
-import LeftContent from './LeftContent.vue'
+import LeftContent from './leftContent/Index.vue'
 import RightContent from './RightContent.vue'
 </script>
