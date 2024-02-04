@@ -6,6 +6,7 @@ import Modal from './modal/Index.vue'
 import Alert from './Alert.vue'
 import Table from './table/Index.vue'
 import PrintCkContent from './PrintCkContent.vue'
+import Tabs from './tabs/Index.vue'
 
 export {
     Button,
@@ -15,5 +16,6 @@ export {
     Modal,
     Alert,
     Table,
-    PrintCkContent
+    PrintCkContent,
+    Tabs
 }
