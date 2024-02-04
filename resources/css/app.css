@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply bg-body;
+}
 
 .custom-container {
-    @apply max-w-[980px] m-auto 
+    @apply max-w-[980px] m-auto;
+}
+
+.ellipsis-text {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
 }

@@ -26,7 +26,7 @@ export default {
                 'info': '#1ba2db',
         
                 'heading': '#222836',
-                'body': '#25262b',
+                'body': '#F7F7F6',
                 
                 'borderLight': '#e5e5e5',
                 'borderDark': '#2B364A',

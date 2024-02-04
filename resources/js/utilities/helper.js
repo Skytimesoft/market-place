@@ -6,7 +6,7 @@ export const printString = (str) => {
 }
 
 export const printPrice = (price) => {
-    return price+'$'
+    return '$ '+ price
 }
 
 export const printDate = (date) => {

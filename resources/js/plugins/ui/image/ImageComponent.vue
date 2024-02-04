@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="relative w-fit"
+        class="relative w-full"
     >
         <img 
             class="block w-full object-cover object-center"
