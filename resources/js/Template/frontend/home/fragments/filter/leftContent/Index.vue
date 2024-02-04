@@ -8,6 +8,7 @@
                             :options="brands"
                             itemValue="name"
                             defaultOption="Brand"
+                            v-model="selectedBrand"
                         />
                     </div>
 
@@ -16,6 +17,7 @@
                             :options="models"
                             itemValue="name"
                             defaultOption="Model"
+                            v-model="selectedModel"
                         />
                     </div>
 
@@ -24,6 +26,7 @@
                             :options="years"
                             itemValue="name"
                             defaultOption="Year of construction (from)"
+                            v-model="selectedYear"
                         />
                     </div>
 
@@ -58,17 +61,19 @@
 
                     <div>
                         <Select.Native 
-                            :options="years"
-                            itemValue="name"
-                            defaultOption="Year of construction (from)"
+                            :options="prices"
+                            itemValue="amount"
+                            defaultOption="Price"
+                            v-model="selectedPrice"
                         />
                     </div>
 
                     <div>
                         <Select.Native 
-                            :options="years"
+                            :options="materials"
                             itemValue="name"
-                            defaultOption="Year of construction (from)"
+                            defaultOption="Fuels"
+                            v-model="selectedMaterial"
                         />
                     </div>
 
@@ -82,9 +87,10 @@
 
 <script setup>
 import { Select, Radio } from "@/plugins/form"
-import { reactive } from "vue"
+import { ref, reactive } from "vue"
 import Buttons from "./Buttons.vue"
 
+const selectedBrand = ref(null);
 const brands = reactive([
     {
         name: 'BMW',
@@ -100,6 +106,7 @@ const brands = reactive([
     },
 ])
 
+const selectedModel = ref(null);
 const models = reactive([
     {
         name: '1 series',
@@ -115,6 +122,7 @@ const models = reactive([
     },
 ])
 
+const selectedYear = ref(null);
 const years = reactive([
     {
         name: '2024',
@@ -126,6 +134,38 @@ const years = reactive([
     },
     {
         name: '2022',
+        id: 3
+    },
+])
+
+const selectedPrice = ref(null);
+const prices = reactive([
+    {
+        amount: '3000',
+        id: 1
+    },
+    {
+        amount: '2000',
+        id: 2
+    },
+    {
+        amount: '3500',
+        id: 3
+    },
+])
+
+const selectedMaterial = ref(null);
+const materials = reactive([
+{
+        name: 'Diesel',
+        id: 1
+    },
+    {
+        name: 'Benzine',
+        id: 2
+    },
+    {
+        name: 'LPG',
         id: 3
     },
 ])

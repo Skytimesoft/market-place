@@ -2,7 +2,9 @@
     <section>
         <Img 
             src="/images/home/banner.jpg" 
-            alt="Banner image" 
+            alt="Banner image"
+            class="h-[350px]"
+            imgClass="object-top" 
         />
     </section>
 </template>

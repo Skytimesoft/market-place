@@ -1,42 +1,42 @@
 <template>
-    <Link to="/" v-for="product in products" :index="product?.title">
-        <div class="bg-white shadow-md ">
+    <article v-if="item" class="relative">
+        <Link to="/" class="absolute inset-0 z-50"></Link>
+        <div class="bg-white shadow-md">
             <Img 
-                :src="product[productImg]"
+                :src="item[imgKey]"
                 alt="Car" 
-                class="h-[132px]"
+                class="h-[170px]"
             />
-            <div class="p-2">
+            <div class="p-5">
                 <h4 class="text-sm text-primary font-medium ellipsis-text">
-                   {{ product[productTitle] }}
+                    {{ printString(item[titleKey]) }}
                 </h4>
-                <p class="mt-1 font-semibold">{{ printPrice(product[productPrice]) }}</p>
+                <p class="mt-1 font-semibold">{{ printPrice(item[priceKey]) }}</p>
             </div>
         </div>
-    </Link>
+    </article>
 </template>
 
 <script setup>
 import { Link } from '@inertiajs/vue3'
 import { Img } from '@/plugins/ui'
-import { printPrice } from '@/utilities/helper'
+import { printString, printPrice } from '@/utilities/helper'
 
 defineProps({
-    products: {
-        type: Array,
-        default: null
-    },
-    productTitle: {
+    titleKey: {
         type: String,
         default: 'title'
     },
-    productPrice: {
-        type: Number,
+    priceKey: {
+        type: String,
         default: 'price'
     },
-    productImg: {
+    imgKey: {
         type: String,
-        default: 'img'
+        default: 'src'
+    },
+    item: {
+        type: Object
     },
 })
 </script>
