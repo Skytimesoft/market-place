@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="pb-12">
         <div class="custom-container">
             <Tabs :tabs="productTabs" defaultTab="tab1">
                 <template #tab1>
