@@ -7,12 +7,11 @@
         />
     </div>
     <div class="mt-7 text-center">
-        <Button.Primary outline="true" class="font-bold">
+        <Button.Primary class="font-bold">
             See More
         </Button.Primary>
     </div>
 </template>
-
 
 <script setup>
 import { Button } from '@/plugins/ui'
