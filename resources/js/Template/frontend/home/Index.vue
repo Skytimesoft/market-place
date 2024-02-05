@@ -3,6 +3,7 @@
         <Banner />
         <Filter />
         <RecentlyViewed />
+        <FindRightCars />
         <ProductTabs />
         <CardContents />
         <CarCategoryTabs />
@@ -17,6 +18,7 @@ import RecentlyViewed from './fragments/recentlyViewed/Index.vue'
 import ProductTabs from './fragments/productTabs/Index.vue'
 import CardContents from './fragments/cardContents/Index.vue'
 import CarCategoryTabs from './fragments/carCategoryTabs/Index.vue'
+import FindRightCars from './fragments/findRightCars/Index.vue'
 // import { printPrice, printDate, printString } from '@/utilities/helper.js'
 
 defineOptions({
