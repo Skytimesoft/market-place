@@ -7,7 +7,7 @@
                 alt="Car" 
                 class="h-[170px]"
             />
-            <div class="p-5">
+            <div class="p-4">
                 <h4 class="text-sm text-primary font-medium ellipsis-text">
                     {{ printString(item[titleKey]) }}
                 </h4>

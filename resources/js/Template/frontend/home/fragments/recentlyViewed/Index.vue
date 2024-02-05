@@ -2,7 +2,7 @@
     <section class="mt-12 mb-8">
         <div class="custom-container">
             <h3 class="font-bold text-xl">Recently viewed</h3>
-            <div class="mt-7 grid grid-cols-4 gap-5">
+            <div class="mt-7 grid grid-cols-4 gap-4">
                 <ProductCard 
                     v-for="item in products" 
                     :key="index" 

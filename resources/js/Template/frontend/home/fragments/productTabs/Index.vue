@@ -1,24 +1,27 @@
 <template>
     <section>
         <div class="custom-container">
-            <Tabs v-for="item in productTabs" :key="index" :item="item">
+            <Tabs :tabs="productTabs" defaultTab="tab1">
                 <template #tab1>
-                    gregre
+                    <TabsOne />
                 </template>
                 <template #tab2>
-                    <p>Best seller products will be here!</p>
+                    <TabsTwo />
                 </template>
             </Tabs>
+
+            
         </div>
     </section>
 </template>
 
 <script setup>
 import { Tabs } from '@/plugins/ui'
+import TabsOne from './TabsOne.vue'
+import TabsTwo from './TabsTwo.vue'
 
 const productTabs = [
-    { id: 'tab1', label: 'New products' },
-    { id: 'tab2', label: 'Best seller' },
-    { id: 'tab3', label: 'Top rated' }
+    { id: 'tab1', label: 'For you' },
+    { id: 'tab2', label: 'In your neighbourhood' }
 ];
 </script>
