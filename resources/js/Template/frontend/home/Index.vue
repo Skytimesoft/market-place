@@ -5,6 +5,7 @@
         <RecentlyViewed />
         <ProductTabs />
         <CardContents />
+        <CarCategoryTabs />
     </Layout>
 </template>
 
@@ -15,6 +16,7 @@ import Filter from './fragments/filter/Index.vue'
 import RecentlyViewed from './fragments/recentlyViewed/Index.vue'
 import ProductTabs from './fragments/productTabs/Index.vue'
 import CardContents from './fragments/cardContents/Index.vue'
+import CarCategoryTabs from './fragments/carCategoryTabs/Index.vue'
 // import { printPrice, printDate, printString } from '@/utilities/helper.js'
 
 defineOptions({
