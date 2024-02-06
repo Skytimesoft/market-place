@@ -1,20 +1,21 @@
 <template>
     <footer class="bg-primary py-12">
         <div class="custom-container">
-            <div class="grid grid-cols-3 gap-7 text-[#ddd] text-sm">
-                <div>
-                    <Logo :footer="true" />
-                    <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas atque similique dolores quasi maiores.
-                        Enim, non voluptas recusandae laborum nostrum explicabo aperiam at eligendi, quidem commodi impedit
-                        libero ipsa asperiores!</p>
-                </div>
+            <div class="grid grid-cols-4 gap-7 text-[#ddd] text-sm">
+                <FooterOne />
+                <FooterTwo />
+                <FooterThree />
+                <FooterFour />
             </div>
         </div>
     </footer>
 </template>
 
 <script setup>
-import Logo from '@/Template/frontend/fragments/Logo.vue'
+import FooterOne from "./FooterOne.vue"
+import FooterTwo from "./FooterTwo.vue"
+import FooterThree from "./FooterThree.vue"
+import FooterFour from "./FooterFour.vue"
 
 defineOptions({
     name: 'footerComponent'
