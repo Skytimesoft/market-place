@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="flex divide-x divide-black/50 border border-black/50"
+        class="flex divide-x divide-black/50 border border-black/50 w-fit"
         :class="vertical ? 'flex-col' : ''"
     >
         <slot></slot>
