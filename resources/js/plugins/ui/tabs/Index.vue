@@ -9,7 +9,7 @@
             >
                 <slot 
                     name="tabButton"
-                    :label="tab.label"
+                    :label="tab?.label"
                     :isActive="currentTab?.id === tab?.id"
                     :changeTab="() => setActiveTab(index)"
                 >
@@ -36,7 +36,7 @@
 
 
 <script setup>
-    import { ref, onMounted } from 'vue'
+    import { onMounted } from 'vue'
     import { useTab } from './useTab.js'
     
     const props = defineProps({
