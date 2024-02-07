@@ -5,7 +5,7 @@
             <div class="mt-7 grid grid-cols-4 gap-4">
                 <article v-for="product in products" :key="product?.title" class="relative">
                     <Link to="/" class="absolute inset-0 z-50"></Link>
-                    <div class="bg-white shadow-md">
+                    <div class="bg-white shadow-md rounded overflow-hidden">
                         <Img 
                             :src="product?.src"
                             alt="Car" 

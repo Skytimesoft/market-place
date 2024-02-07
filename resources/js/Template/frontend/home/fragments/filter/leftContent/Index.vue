@@ -1,6 +1,6 @@
 <template>
     <div class="grow">
-        <div class="p-6 bg-white shadow-md">
+        <div class="p-6 bg-white shadow-md rounded">
             <form>
                 <div class="grid grid-cols-3 gap-4">
                     <div>

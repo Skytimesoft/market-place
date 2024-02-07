@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white p-4">
+    <div class="bg-white rounded p-4">
         <ul class="columns-7 gap-x-10">
             <li 
                 v-for="n in 100" 

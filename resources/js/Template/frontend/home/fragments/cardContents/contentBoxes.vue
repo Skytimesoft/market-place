@@ -3,7 +3,7 @@
         <article 
             v-for="item in contentBoxes" 
             :key="item?.title" 
-            class="bg-white shadow-md"
+            class="bg-white shadow-md rounded overflow-hidden"
         >
             <Img 
                 :src="item?.src" 

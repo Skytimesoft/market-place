@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-6 gap-7 bg-white p-4">
+    <div class="grid grid-cols-6 gap-7 bg-white rounded p-4">
         <ul 
             v-for="category in categories" 
             :key="category?.title"

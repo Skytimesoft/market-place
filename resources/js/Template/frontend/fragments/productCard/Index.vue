@@ -1,5 +1,5 @@
 <template>
-    <article v-if="item" class="relative">
+    <article v-if="item" class="relative rounded overflow-hidden">
         <Link to="/" class="absolute inset-0 z-50"></Link>
         <div class="bg-white shadow-md">
             <Img 

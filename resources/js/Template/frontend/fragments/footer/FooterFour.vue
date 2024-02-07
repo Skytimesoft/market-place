@@ -7,7 +7,7 @@
                     <Img 
                         :src="logo?.src"
                         :alt="logo?.alt" 
-                        class="w-36"
+                        class="w-[160px]"
                     />
                 </Link>
             </li>

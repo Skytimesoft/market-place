@@ -3,7 +3,7 @@
         <article 
             v-for="item in infoBoxes" 
             :key="item?.title" 
-            class="p-4 bg-white shadow-md group"
+            class="p-4 bg-white shadow-md group rounded overflow-hidden"
         >
             <div class="m-auto inline-block">
                 <Icon 
