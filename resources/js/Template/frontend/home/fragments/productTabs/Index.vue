@@ -1,16 +1,19 @@
 <template>
     <section>
         <div class="custom-container">
-            <Tabs :tabs="productTabs" defaultTab="tab1">
-                <template #tab1>
-                    <TabsOne />
-                </template>
-                <template #tab2>
-                    <TabsTwo />
+            <Tabs 
+                :tabs="productTabs" 
+            >
+                <template #tabButton="{ label, isActive, changeTab }">
+                    <button
+                        class="px-4 py-2 rounded shadow-lg uppercase font-bold"
+                        :class="isActive ? 'bg-red-500 text-white' : 'bg-white text-red-500 '"
+                        @click="changeTab"
+                    >
+                        {{ label }}
+                    </button>
                 </template>
             </Tabs>
-
-            
         </div>
     </section>
 </template>
@@ -21,7 +24,23 @@ import TabsOne from './TabsOne.vue'
 import TabsTwo from './TabsTwo.vue'
 
 const productTabs = [
-    { id: 'tab1', label: 'For you' },
-    { id: 'tab2', label: 'In your neighbourhood' }
-];
+    {
+        id: 1,
+        label: 'For you',
+        component: TabsOne,
+        active: true
+    },
+    { 
+        id: 2,
+        label: 'In your neighborhood',
+        component: TabsTwo,
+        active: false
+    },
+    { 
+        id: 3,
+        label: 'In your neighborhood',
+        component: TabsTwo,
+        active: false
+    }
+]
 </script>
