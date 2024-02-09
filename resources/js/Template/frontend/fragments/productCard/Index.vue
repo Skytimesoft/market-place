@@ -1,6 +1,6 @@
 <template>
     <article v-if="item" class="relative rounded overflow-hidden">
-        <Link to="/" class="absolute inset-0 z-50"></Link>
+        <Link href="/single-product" class="absolute inset-0 z-50"></Link>
         <div class="bg-white shadow-md">
             <Img 
                 :src="item[imgKey]"
