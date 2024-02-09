@@ -1,11 +1,11 @@
 <template>
     <Link
-        v-if="to"
+        v-if="href"
         :class="[
             loading ? 'pointer-events-none opacity-70' : '',
             (!isEmpty(icon) && (icon.position == 'top' || icon.position == 'bottom')) ? 'flex flex-col items-center' : ''
         ]"
-        :to="to"
+        :href="href"
     >
         <ButtonContent
             :icon="icon"
@@ -37,7 +37,7 @@
 
     defineProps({
         loading: Boolean,
-        to: [Object, String],
+        href: [Object, String],
         icon: Object
     })
 </script>

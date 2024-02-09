@@ -2,7 +2,7 @@
     <div>
         <Button.Native 
             v-if="!footer" 
-            to="/" 
+            href="/" 
             class="block w-[120px]"
         >
             <Img
@@ -13,7 +13,7 @@
 
         <Button.Base 
             v-else 
-            to="/" 
+            href="/" 
             class="block w-[120px]"
         >
             <Img 
