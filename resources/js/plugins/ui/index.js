@@ -7,6 +7,7 @@ import Alert from './Alert.vue'
 import Table from './table/Index.vue'
 import PrintCkContent from './PrintCkContent.vue'
 import Tabs from './tabs/Index.vue'
+import Breadcrumbs from './breadcrumbs/Index.vue'
 
 export {
     Button,
@@ -17,5 +18,6 @@ export {
     Alert,
     Table,
     PrintCkContent,
-    Tabs
+    Tabs,
+    Breadcrumbs
 }

@@ -1,7 +1,7 @@
 <template>
-    <section class="border-b border-borderDark/20 p-4">
+    <section class="border-b border-borderDark/20 py-5">
         <div class="custom-container">
-            <div class="flex gap-2 items-center">
+            <div class="flex gap-2 items-center justify-center">
                 <div>
                     <Input.Native 
                         placeholder="Search categories"
