@@ -1,19 +1,21 @@
 <template>
     <Layout>
-        <SearchBar />
-        <Breadcrumbs />
-        <div class="py-8">
-            <div class="custom-container">
-                <div class="flex gap-5">
-                    <Listing />
-                    <Sidebar />
+        <div>
+            <SearchBar />
+            <Breadcrumbs />
+            <div class="pb-8">
+                <div class="custom-container">
+                    <div class="flex items-start gap-5">
+                        <Listing />
+                        <Sidebar />
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <RelatedProducts />
-        <PopularSearch />
-        <Categories />
+            <RelatedProducts />
+            <PopularSearch />
+            <Categories />
+        </div>
     </Layout>
 </template>
 

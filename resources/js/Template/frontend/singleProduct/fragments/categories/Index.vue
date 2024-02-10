@@ -1,5 +1,5 @@
 <template>
-    <section class="mb-8 bg-white rounded py-8">
+    <section class="bg-white rounded py-8">
         <div class="custom-container">
             <div class="grid grid-cols-6 gap-7">
                 <ul 
