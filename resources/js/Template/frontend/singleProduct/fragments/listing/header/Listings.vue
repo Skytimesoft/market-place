@@ -12,8 +12,6 @@
 </template>
 
 <script setup>
-import { Icon } from "@/plugins/ui"
-
 const items = [
     {
         title: "Year",
