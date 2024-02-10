@@ -1,5 +1,5 @@
 <template>
-    <aside class="w-[320px] bg-white rounded">
+    <aside class="flex-shrink-0 w-[300px] bg-white rounded">
         sidebar
     </aside>
 </template>

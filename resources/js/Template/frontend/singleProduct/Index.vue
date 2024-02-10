@@ -10,6 +10,8 @@
                 </div>
             </div>
         </div>
+
+        <RelatedProducts />
     </Layout>
 </template>
 
@@ -19,6 +21,7 @@ import SearchBar from './fragments/searchBar/Index.vue'
 import Breadcrumbs from './fragments/breadcrumbs/Index.vue'
 import Listing from './fragments/listing/Index.vue'
 import Sidebar from './fragments/sidebar/Index.vue'
+import RelatedProducts from './fragments/relatedProducts/Index.vue'
 
 defineOptions({
     name: 'SingleProduct'

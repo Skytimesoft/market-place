@@ -3,6 +3,7 @@
         <ListingHeader />
         <InspectionService />
         <Highlights />
+        <Description />
     </div>
 </template>
 
@@ -10,4 +11,5 @@
 import ListingHeader from "./header/Index.vue"
 import InspectionService from "./inspectionService/Index.vue"
 import Highlights from "./highlights/Index.vue"
+import Description from "./description/Index.vue"
 </script>
