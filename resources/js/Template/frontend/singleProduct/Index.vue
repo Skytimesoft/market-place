@@ -12,6 +12,7 @@
         </div>
 
         <RelatedProducts />
+        <PopularSearch />
     </Layout>
 </template>
 
@@ -22,6 +23,7 @@ import Breadcrumbs from './fragments/breadcrumbs/Index.vue'
 import Listing from './fragments/listing/Index.vue'
 import Sidebar from './fragments/sidebar/Index.vue'
 import RelatedProducts from './fragments/relatedProducts/Index.vue'
+import PopularSearch from './fragments/popularSearch/Index.vue'
 
 defineOptions({
     name: 'SingleProduct'
