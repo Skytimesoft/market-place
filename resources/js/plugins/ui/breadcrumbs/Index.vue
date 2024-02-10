@@ -1,16 +1,14 @@
 <template>
     <div class="py-5">
         <nav class="flex gap-2 items-center text-sm">
-            <Button.Primary
+            <Button.Native
                 :icon="{
                     name: 'PhArrowLeft',
-                    size: 16,
+                    size: 12,
                 }"
-                outline="true"
-                class="rounded-full"
+                class="rounded-full border border-borderDark p-1 hover:border-primary"
             >
-                <span>Go back</span>
-            </Button.Primary>
+            </Button.Native>
 
             <Link href="/">Home</Link>
             <Icon

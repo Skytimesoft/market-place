@@ -27,8 +27,10 @@ export default {
         
                 'heading': '#222836',
                 'body': '#F7F7F6',
+                'content': '#4b6179',
                 
                 'borderDark': '#6b7280',
+                'borderLight': '#E1E3E6',
             },
         },
     },
