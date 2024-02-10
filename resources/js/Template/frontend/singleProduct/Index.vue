@@ -13,6 +13,7 @@
 
         <RelatedProducts />
         <PopularSearch />
+        <Categories />
     </Layout>
 </template>
 
@@ -24,6 +25,7 @@ import Listing from './fragments/listing/Index.vue'
 import Sidebar from './fragments/sidebar/Index.vue'
 import RelatedProducts from './fragments/relatedProducts/Index.vue'
 import PopularSearch from './fragments/popularSearch/Index.vue'
+import Categories from './fragments/categories/Index.vue'
 
 defineOptions({
     name: 'SingleProduct'
