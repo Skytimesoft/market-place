@@ -11,7 +11,6 @@
                     </div>
                 </div>
             </div>
-
             <RelatedProducts />
             <PopularSearch />
             <Categories />

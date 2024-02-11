@@ -8,6 +8,7 @@ import Table from './table/Index.vue'
 import PrintCkContent from './PrintCkContent.vue'
 import Tabs from './tabs/Index.vue'
 import Breadcrumbs from './breadcrumbs/Index.vue'
+import ThumbsSlider from './slider/thumbsSlider/Index.vue'
 
 export {
     Button,
@@ -19,5 +20,6 @@ export {
     Table,
     PrintCkContent,
     Tabs,
-    Breadcrumbs
+    Breadcrumbs,
+    ThumbsSlider
 }
