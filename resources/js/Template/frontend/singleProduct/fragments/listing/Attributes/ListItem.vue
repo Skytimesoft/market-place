@@ -23,7 +23,7 @@ import { Icon } from "@/plugins/ui"
 
 const items = [
     {
-        iconName: "car",
+        iconName: "carSimple",
         title: "Make & Model, version",
         content: "Audi A5, Cabriolet 1.8 TFSI Pro Line S-Line/DAB+/ROTOR/PDC/XENON/VERY FULL!!"
     },

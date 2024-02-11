@@ -1,62 +1,77 @@
 <template>
-    <div class="accordion">
-      <div v-for="(item, index) in items" :key="index">
-        <button @click="toggleAccordion(index)">
-            <span :class="isOpen(index) ? 'font-bold' : ''">{{ item.title }}</span>
-        </button>
-        <div v-if="isOpen(index)" class="" :class="{ isOpen(index) ? 'block' : 'hidden' }">
-          <p>{{ item.content }}</p>
+    <div class="space-y-1.5">
+        <div 
+            v-for="(item, index) in items" 
+            :key="index"
+            class="w-full"
+        >
+
+            <button 
+                @click="toggleAccordion(index)"
+                class="px-4 py-2.5 bg-primary/5 w-full flex justify-between items-center gap-4"
+            >
+                <h5 class="flex items-center gap-x-2 text-left">
+                    <Icon
+                        :name="item?.iconName"
+                        size="20"
+                        color="#606060"
+                    />
+                    <span 
+                        class="font-semibold"
+                        :class="openIndex === index ? 'text-primary' : ''"
+                    >
+                        {{ item?.title }}
+                    </span>
+                </h5>
+                <Icon
+                    :name="openIndex === index ? 'PhCaretUp' : 'PhCaretDown'"
+                    size="16"
+                    class="flex-shrink-0"
+                />
+            </button>
+
+            <div 
+                v-if="openIndex === index" 
+                :class="{ 'block': openIndex === index }"
+                class="p-4 text-sm"
+            >
+                <ul class="space-y-4">
+                    <li 
+                        v-for="(n, index) in 10"
+                        :key="index"
+                        class="grid grid-cols-2 gap-3"
+                    >
+                        <span class="text-content">Merk & Model</span>
+                        <span class="font-semibold">Handgeschakeld 6 versnellingen</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </template>
+</template>
   
-  <script setup>
-  import { ref } from 'vue'
-  
-  const items = ref([
-    { title: 'Accordion 1', content: 'Content for Accordion 1' },
-    { title: 'Accordion 2', content: 'Content for Accordion 2' },
-    { title: 'Accordion 3', content: 'Content for Accordion 3' }
-  ])
-  
-  const openIndex = ref(null)
-  
-  const toggleAccordion = (index) => {
-    if (openIndex.value === index) {
-      openIndex.value = null
-    } else {
-      openIndex.value = index
+<script setup>
+import { ref } from 'vue'
+import { Icon } from "@/plugins/ui"
+
+const items = ref([
+    { 
+        iconName: 'car-simple',
+        title: 'Basis' 
+    },
+    { 
+        iconName: 'engine',
+        title: 'Engine' 
+    },
+    { 
+        iconName: 'leaf',
+        title: 'Environment' 
     }
-  }
-  
-  const isOpen = (index) => {
-    return openIndex.value === index
-  }
-  </script>
-  
-  <!-- <style scoped>
-    .accordion {
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-  
-    .accordion button {
-      background-color: #f0f0f0;
-      padding: 10px;
-      border: none;
-      width: 100%;
-      text-align: left;
-      cursor: pointer;
-    }
-  
-    .accordion .content {
-      padding: 10px;
-      display: none;
-    }
-  
-    .accordion .content.show {
-      display: block;
-    }
-  </style> -->
+])
+
+const openIndex = ref(null)
+
+const toggleAccordion = (index) => {
+    openIndex.value === index ? openIndex.value = null :  openIndex.value = index
+}
+</script>
