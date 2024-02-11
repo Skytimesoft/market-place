@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="relative w-full"
+        class="relative"
         :class="class"
     >
         <img 
