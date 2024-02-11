@@ -5,7 +5,8 @@
         <InspectionService />
         <Highlights />
         <Attributes />
-        <Description />
+        <Description />  
+        <ReportBlock />
     </div>
 </template>
 
@@ -16,4 +17,5 @@ import Highlights from "./highlights/Index.vue"
 import Attributes from "./attributes/Index.vue"
 import Description from "./description/Index.vue"
 import ProductGallery from "./productGallery/Index.vue"
+import ReportBlock from './reportBlock/Index.vue'
 </script>
