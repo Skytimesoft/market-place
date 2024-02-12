@@ -2,7 +2,9 @@
     <Layout>
         <div>
             <TopSearchBar />
-            <Breadcrumbs />
+            <div class="custom-container">
+                <Breadcrumbs />
+            </div>
             <div class="pb-8">
                 <div class="custom-container">
                     <div class="flex items-start gap-5">
@@ -19,9 +21,9 @@
 </template>
 
 <script setup>
+import { Breadcrumbs } from '@/plugins/ui'
 import Layout from '@/Template/frontend/layout/Index.vue'
 import TopSearchBar from "@/Template/frontend/fragments/topSearchBar/Index.vue"
-import Breadcrumbs from './fragments/breadcrumbs/Index.vue'
 import Listing from './fragments/listing/Index.vue'
 import Sidebar from './fragments/sidebar/Index.vue'
 import RelatedProducts from './fragments/relatedProducts/Index.vue'
