@@ -18,6 +18,7 @@
                 class="flex-shrink-0 rounded-full w-8 h-8"
             >
             </Button.Primary>
+            
             <div class="grow overflow-hidden flex justify-center gap-3">
                 <Img 
                     :src="image?.thumb"
