@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="flex gap-4 items-center"
+        class="mt-4 grid grid-cols-[32px_1fr_32px] gap-4 items-center"
     >
         <Button.Primary
             :icon="{
@@ -9,20 +9,24 @@
             }"
             outline="true"
             @click="changeSlide(-1)"
-            class="flex-shrink-0 rounded-full w-8 h-8"
+            class="rounded-full w-8 h-8"
         />
 
-        <div
-            v-for="(img, index) in productImages"
-            :key="index"
-            class="flex-shrink-0 flex-grow-0 w-20 bg-black cursor-pointer"
-            @click="setActiveImage(index)"
+        <div 
+            class="flex gap-2 overflow-x-hidden"
         >
-            <Img
-                :src="img.thumbnail"
-                :alt="img.caption"
-                :class="activeImage === index ? 'opacity-100' : 'opacity-60 brightness-50'"
-            />
+            <div
+                v-for="(img, index) in lightBoxImages"
+                :key="index"
+                class="w-20 bg-black cursor-pointer"
+                @click="setActiveImage(index)"
+            >
+                <Img
+                    :src="img.thumbnail"
+                    :alt="img.caption"
+                    :class="activeImage === index ? 'opacity-100' : 'opacity-60 brightness-50'"
+                />
+            </div>
         </div>
 
         <Button.Primary
@@ -32,7 +36,7 @@
             }"
             outline="true"
             @click="changeSlide(1)"
-            class="flex-shrink-0 rounded-full w-8 h-8"
+            class="rounded-full w-8 h-8"
         />
     </div>
 </template>
@@ -45,7 +49,7 @@
     })
 
     const props = defineProps({
-        productImages: {
+        lightBoxImages: {
             type: Array,
             default: [],
             required: true

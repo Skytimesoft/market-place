@@ -1,20 +1,19 @@
 <template>
     <div class="p-5">
         <LightBox
-            :productImages="productImages"
+            :lightBoxImages="productImages"
         />
-        <ThumbsSlider />
     </div>
 </template>
 
 <script setup>
-import { ThumbsSlider, LightBox } from "@/plugins/ui"
+import { LightBox } from "@/plugins/ui"
 
 const productImages = [
     {
-        original: 'https://mp.images.icas.io/api/v1/a6519ad0/images/3f/3f46e442-a09f-4ebd-aa2a-2382d43d6b7a?rule=eps_83',
+        original: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyfGVufDB8fDB8fHww',
         thumbnail:
-            'https://mp.images.icas.io/api/v1/a6519ad0/images/3f/3f46e442-a09f-4ebd-aa2a-2382d43d6b7a?rule=eps_83',
+            'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyfGVufDB8fDB8fHww',
         caption: 'slider 1',
     },
     {

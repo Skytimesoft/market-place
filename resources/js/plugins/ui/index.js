@@ -8,7 +8,6 @@ import Table from './table/Index.vue'
 import PrintCkContent from './PrintCkContent.vue'
 import Tabs from './tabs/Index.vue'
 import Breadcrumbs from './breadcrumbs/Index.vue'
-import ThumbsSlider from './slider/thumbsSlider/Index.vue'
 import LightBox from './lightBox/Index.vue'
 
 export {
@@ -22,6 +21,5 @@ export {
     PrintCkContent,
     Tabs,
     Breadcrumbs,
-    ThumbsSlider,
     LightBox
 }

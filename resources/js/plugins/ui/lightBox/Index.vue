@@ -1,14 +1,13 @@
 <template>
-    <div
-    >
+    <div>
         <Img
             v-if="lightBoxImages[activeImage]"
             :src="lightBoxImages[activeImage].original"
             :alt="lightBoxImages[activeImage].thumbnail"
-            class="w-full aspect-square object-cover bg-red-200"
+            class="w-full object-cover bg-red-200"
         />
         <LightBoxFooter
-            :productImages="lightBoxImages"
+            :lightBoxImages="lightBoxImages"
             :changeSlide="changeSlide"
             :activeImage="activeImage"
             :setActiveImage="setActiveImage"
@@ -22,7 +21,7 @@
     import { useLightBox } from './useLightBox.js'
 
     const props = defineProps({
-        productImages: {
+        lightBoxImages: {
             type: Array,
             default: [],
             required: true
@@ -36,7 +35,7 @@
     const { lightBoxImages, activeImage, changeSlide, setActiveImage } = useLightBox()
 
     onMounted(() => {
-        lightBoxImages.value = props.productImages
-        activeImage.value    = props.productImages.findIndex(img => img.active) || 0
+        lightBoxImages.value = props.lightBoxImages
+        activeImage.value    = props.lightBoxImages.findIndex(img => img.active) || 0
     })
 </script>
