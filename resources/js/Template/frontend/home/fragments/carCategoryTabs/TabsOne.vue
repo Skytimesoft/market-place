@@ -35,7 +35,7 @@ import { Link } from '@inertiajs/vue3';
 const categories = [
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -53,7 +53,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -71,7 +71,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -89,7 +89,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -107,7 +107,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -125,7 +125,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Electric/Petrol',
@@ -143,7 +143,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -161,7 +161,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -179,7 +179,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',
@@ -197,7 +197,7 @@ const categories = [
     },
     {
         title: 'Delivery vans',
-        titlePath: '/',
+        titlePath: '/category',
         subCategories: [
             {
                 name: 'Petrol',

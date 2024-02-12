@@ -29,6 +29,10 @@ Route::get('/single-product', function () {
     return Inertia::render('frontend/singleProduct/Index');
 });
 
+Route::get('/category', function () {
+    return Inertia::render('frontend/category/Index');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
