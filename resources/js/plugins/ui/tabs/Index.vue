@@ -1,7 +1,8 @@
 <template>
     <div>
         <div 
-            class="flex flex-wrap gap-2 sm:gap-3 mb-7" 
+            class="flex flex-wrap gap-2 sm:gap-3 mb-7"
+            :class="tabsButtonClass" 
         >
             <template
                 v-for="(tab, index) in tabs"
@@ -43,6 +44,9 @@
         tabs: {
             type: Array,
             required: true
+        },
+        tabsButtonClass: {
+            type: String,
         }
     })
 

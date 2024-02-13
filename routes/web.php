@@ -16,6 +16,10 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/account/login', function () {
+    return Inertia::render('frontend/account/Index');
+});
+
 Route::get('/', function () {
     return Inertia::render('frontend/home/Index', [
         'canLogin' => Route::has('login'),

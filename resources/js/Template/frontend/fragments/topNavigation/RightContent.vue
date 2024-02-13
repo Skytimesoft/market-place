@@ -24,8 +24,7 @@
             :icon="{
                 name: 'PhPushPin',
                 size: 16,
-                weight: 'fill',
-                spin: true
+                weight: 'fill'
             }"
         >
             <span>Place advertisement</span>
