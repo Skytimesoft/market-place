@@ -55,7 +55,7 @@
                     </label>
                 </div>
                 <Link 
-                    href="#" 
+                    href="/account/password-reset" 
                     class="font-medium text-blue-600 hover:underline"
                 >
                     Lost Password?

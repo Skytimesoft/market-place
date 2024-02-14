@@ -20,7 +20,7 @@ export default {
                 'primary': '#116db4',
                 'secondary': '#EDA566',
         
-                'success': '#39B54A',
+                'success': '#216C50',
                 'danger': '#ff0003',
                 'warning': '#ff8f3c',
                 'info': '#1ba2db',
