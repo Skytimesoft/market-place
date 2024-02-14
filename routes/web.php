@@ -24,6 +24,10 @@ Route::get('/account/password-reset', function () {
     return Inertia::render('frontend/account/passwordReset/Index');
 });
 
+Route::get('/wishlist', function () {
+    return Inertia::render('frontend/wishlist/Index');
+});
+
 Route::get('/', function () {
     return Inertia::render('frontend/home/Index', [
         'canLogin' => Route::has('login'),

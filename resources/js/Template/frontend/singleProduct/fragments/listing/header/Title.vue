@@ -8,6 +8,7 @@
                 name: 'PhHeart',
                 size: 16,
             }"
+            href="/wishlist"
             outline="true"
             class="shrink-0"
         >

@@ -14,13 +14,14 @@
             </p>
         </div>
         <div class="text-xl font-bold">
-            € 16.249
+            {{ printPrice(16.249) }}
         </div>
     </div>
 </template>
 
 <script setup>
 import { Icon } from "@/plugins/ui"
+import { printPrice } from '@/utilities/helper'
 
 const metaData = [
     {
