@@ -1,5 +1,5 @@
 <template>
-    <div class="border-t pt-4">
+    <div>
         <Button.Primary
             class="w-full bg-[#4285F4]"
         >
@@ -75,8 +75,8 @@
             </div>
             <div>
                 Already registered?
-                <Link href="/registration" class="font-semibold text-secondary underline">
-                Sign In here
+                <Link href="/account/login" class="font-semibold text-secondary underline">
+                    Sign In here
                 </Link>
             </div>
         </form>

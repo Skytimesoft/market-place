@@ -17,15 +17,7 @@
                     </h4>
                     <p class="mt-2 text-sm text-content">15 years active on Marktplaats</p>
                 </div>
-                <Button.Primary 
-                    :icon="{
-                        name: 'PhUserCircle',
-                        size: 20
-                    }"
-                    outline="true"
-                    class="flex-shrink-0"
-                >
-                </Button.Primary>
+                <Profile />
             </div>
 
             <p class="my-2 text-sm text-content">
@@ -55,4 +47,5 @@
 <script setup>
 import { Link } from '@inertiajs/vue3'
 import { Img, Button } from '@/plugins/ui'
+import Profile from "./Profile.vue"
 </script>

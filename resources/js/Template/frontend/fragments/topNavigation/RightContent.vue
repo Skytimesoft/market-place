@@ -7,7 +7,7 @@
                 class="px-2 py-1 bg-white rounded transition-all hover:bg-gray-100"
             >
                 <Link 
-                    :to="rightMenu?.url" 
+                    :href="rightMenu?.url" 
                     class="flex items-center gap-1"
                 >
                     <Icon 
@@ -50,7 +50,7 @@ const rightMenus = [
     {
         icon: 'PhUser',
         label: 'Login',
-        url: '/'
+        url: '/account/login'
     }
 ];
 </script>
