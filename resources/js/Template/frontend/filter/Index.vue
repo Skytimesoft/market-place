@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <div class="py-10 flex items-start gap-5">
+                <div class="py-10 flex items-start gap-8">
                     <Sidebar />
                     <Listing />
                 </div>
