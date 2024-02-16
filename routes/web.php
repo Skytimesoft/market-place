@@ -24,6 +24,10 @@ Route::get('/account/password-reset', function () {
     return Inertia::render('frontend/account/passwordReset/Index');
 });
 
+Route::get('/identity/verification/activation-phone-number', function () {
+    return Inertia::render('frontend/account/verification/MobileVerification');
+});
+
 Route::get('/wishlist', function () {
     return Inertia::render('frontend/wishlist/Index');
 });
