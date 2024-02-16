@@ -41,13 +41,13 @@
             </div>
 
             <div class="flex justify-between items-center">
-                <div class="flex items-center gap-x-3">
+                <div class="flex items-center gap-x-2">
                     <input 
                         id="remember" 
                         aria-describedby="remember" 
                         name="remember" 
                         type="checkbox"
-                        class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300" 
+                        class="w-4 h-4 border-borderDark rounded" 
                         required
                     >
                     <label for="remember" class="font-medium">

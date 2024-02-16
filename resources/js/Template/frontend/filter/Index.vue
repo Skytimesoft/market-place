@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <div class="px-5">
+        <div class="px-5 pb-12">
             <TopSearchBar />
             <div class="custom-container">
                 <div class="flex justify-between items-center gap-4">
@@ -21,6 +21,8 @@
                     <Sidebar />
                     <Listing />
                 </div>
+
+                <Pagination />
             </div>
         </div>
     </Layout>
@@ -31,6 +33,7 @@ import { Button } from "@/plugins/ui"
 import { Breadcrumbs } from '@/plugins/ui'
 import Layout from '@/Template/frontend/layout/Index.vue'
 import TopSearchBar from "@/Template/frontend/fragments/topSearchBar/Index.vue"
+import Pagination from "@/Template/frontend/fragments/pagination/Index.vue"
 import Sidebar from "./sidebar/Index.vue"
 import Listing from "./listing/Index.vue"
 </script>

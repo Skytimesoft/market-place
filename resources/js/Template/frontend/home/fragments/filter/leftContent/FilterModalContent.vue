@@ -114,7 +114,7 @@
 
 
 <script setup>
-import { Select, Radio, Input, Checkbox } from "@/plugins/form"
+import { Select, Radio, Input } from "@/plugins/form"
 import { Button } from "@/plugins/ui"
 import { printPrice } from '@/utilities/helper'
 import { ref, reactive } from "vue"

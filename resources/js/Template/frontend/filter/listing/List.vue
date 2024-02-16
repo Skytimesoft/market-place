@@ -13,7 +13,7 @@
                     class="h-[170px]"
                 />
                 <div class="p-4">
-                    <h4 class="text-sm text-primary font-medium ellipsis-text">
+                    <h4 class="text-[15px] text-primary font-medium ellipsis-text">
                         {{ printString('Classic English Side Tables by Mahogany') }}
                     </h4>
                     <p class="my-2 pb-2 border-b border-borderLight font-semibold">{{ printPrice('900') }}</p>
