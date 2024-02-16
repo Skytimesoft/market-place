@@ -1,6 +1,7 @@
 <template>
     <div>
         <Button.Primary
+            href="/identity/verification/activation-phone-number"
             class="w-full bg-[#4285F4]"
         >
             <img 
