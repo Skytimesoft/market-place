@@ -21,7 +21,7 @@
         </Button.Native>
         <Button.Primary
           outline="true"
-          class="px-4 font-medium"
+          class="px-4 font-semibold"
         >
           3
         </Button.Primary>

@@ -49,6 +49,10 @@ Route::get('/filter', function () {
     return Inertia::render('frontend/filter/Index');
 });
 
+Route::get('/privacy-policy', function () {
+    return Inertia::render('frontend/privacyPolicy/Index');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -1,5 +1,5 @@
 <template>
-    <div class="grow bg-white rounded divide-y divide-borderLight">
+    <div class="grow bg-white shadow-md rounded divide-y divide-borderLight">
         <ListingHeader />
         <ProductGallery />
         <InspectionService />
