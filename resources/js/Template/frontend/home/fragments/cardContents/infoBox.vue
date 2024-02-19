@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-7 grid grid-cols-3 gap-6">
+    <div class="mt-7 grid lg:grid-cols-3 gap-4 lg:gap-6">
         <article 
             v-for="item in infoBoxes" 
             :key="item?.title" 

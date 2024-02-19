@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid lg:grid-cols-3 gap-4 lg:gap-6">
         <article 
             v-for="item in contentBoxes" 
             :key="item?.title" 

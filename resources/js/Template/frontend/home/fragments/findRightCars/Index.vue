@@ -2,7 +2,7 @@
     <section class="mb-12">
         <div class="custom-container">
             <h3 class="font-bold text-xl">Find what's right for you</h3>
-            <div class="mt-7 grid grid-cols-4 gap-4">
+            <div class="mt-7 grid grid-cols-2 lg:grid-cols-4 gap-4">
                 <article v-for="product in products" :key="product?.title" class="relative">
                     <Link to="/" class="absolute inset-0 z-50"></Link>
                     <div class="bg-white shadow-md rounded overflow-hidden">

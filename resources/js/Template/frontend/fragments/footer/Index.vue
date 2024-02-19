@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-primary py-12">
         <div class="custom-container">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-7 text-[#ddd] text-sm">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 text-[#ddd] text-sm">
                 <FooterOne />
                 <FooterTwo />
                 <FooterThree />
