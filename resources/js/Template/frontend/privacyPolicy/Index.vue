@@ -2,8 +2,8 @@
     <Layout>
         <div class="my-12">
             <div class="custom-container">
-                <div class="flex items-start gap-5">
-                    <div class="flex-shrink-0 w-[300px] bg-white shadow-md rounded p-4">
+                <div class="flex flex-col lg:flex-row items-start gap-5">
+                    <div class="lg:flex-shrink-0 lg:w-[300px] bg-white shadow-md rounded p-4">
                         <ul class="space-y-2">
                             <li 
                                 v-for="n in 7"
@@ -23,7 +23,7 @@
                         </ul>
                     </div>
 
-                    <div class="grow bg-white shadow-md rounded p-7">
+                    <div class="grow bg-white shadow-md rounded p-4 lg:p-7">
                         <h1 class="text-3xl font-semibold">
                             Privacy Policy
                         </h1>
