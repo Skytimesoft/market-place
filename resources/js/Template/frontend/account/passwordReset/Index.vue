@@ -3,11 +3,11 @@
         <div class="py-12">
             <div class="custom-container">
                 <div class="max-w-[500px] m-auto">
-                    <h1 class="text-center text-3xl font-semibold">
+                    <h1 class="text-center text-2xl lg:text-3xl font-semibold">
                         Password Reset
                     </h1>
-                    <div class="bg-white shadow-md rounded p-8 mt-7">
-                        <h2 class="text-xl font-medium">
+                    <div class="bg-white shadow-md rounded p-4 lg:p-8 mt-7">
+                        <h2 class="text-lg lg:text-xl font-medium">
                             Enter your email address to reset your password
                         </h2>
                         <div class="mt-4 mb-2">

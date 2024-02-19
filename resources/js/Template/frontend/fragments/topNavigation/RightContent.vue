@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-4 items-center">
+    <div class="hidden lg:flex gap-4 items-center">
         <ul class="flex items-start gap-1">
             <li 
                 v-for="rightMenu of rightMenus" 

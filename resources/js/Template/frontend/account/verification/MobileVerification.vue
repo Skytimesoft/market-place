@@ -3,7 +3,7 @@
         <div class="py-12">
             <div class="custom-container">
                 <div class="max-w-[500px] m-auto">
-                    <div class="bg-white shadow-md rounded p-8">
+                    <div class="bg-white shadow-md rounded p-4 lg:p-8">
                         <h2 class="text-2xl font-semibold text-center">
                             Setting up extra security
                         </h2>
@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="flex gap-2">
-                            <div>
+                            <div class="flex-shrink-0">
                                 <label class="mb-1 text-black/60 font-semibold block">
                                     Country code
                                 </label>

@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-[500px] m-auto">
-        <div class="bg-white shadow-md rounded p-8 mt-7">
+        <div class="bg-white shadow-md rounded p-4 lg:p-8 mt-7">
             <div class="flex justify-center items-center gap-3 bg-success/20 rounded p-3">
                 <Icon 
                     name="PhCheckCircle" 
@@ -8,13 +8,13 @@
                     color="#216C50"
                     weight="fill"
                 />
-                <p class="text-xl font-medium text-success">
+                <p class="text-base lg:text-xl font-medium text-success">
                     Account created successfully
                 </p>
             </div>
             
             <div>
-                <h2 class="mt-10 mb-3 text-2xl font-semibold">
+                <h2 class="mt-6 lg:mt-10 mb-3 text-2xl font-semibold">
                     Check your email
                 </h2>
                 <p class="text-heading/90">

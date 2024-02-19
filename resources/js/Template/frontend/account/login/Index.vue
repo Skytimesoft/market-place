@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center text-sm lg:text-base">
                 <div class="flex items-center gap-x-2">
                     <input 
                         id="remember" 

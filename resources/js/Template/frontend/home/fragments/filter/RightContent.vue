@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[230px] shrink-0 p-5 bg-white shadow-md rounded">
+    <div class="lg:w-[230px] lg:shrink-0 p-5 bg-white shadow-md rounded">
         <h3 class="font-semibold text-lg">Sell your current car</h3>
         <p class="mt-1.5 text-sm">Enter your license plate number and place your advertisement or check what it's worth.</p>
         <div class="relative my-6">
