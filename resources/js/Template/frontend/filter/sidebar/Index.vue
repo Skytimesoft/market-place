@@ -1,5 +1,5 @@
 <template>
-    <aside class="flex-shrink-0 w-[300px]">
+    <aside class="flex-shrink-0 w-full lg:w-[300px]">
         <div class="bg-white p-4 space-y-5 shadow-md rounded">
             <Category />
             <Advertisement />

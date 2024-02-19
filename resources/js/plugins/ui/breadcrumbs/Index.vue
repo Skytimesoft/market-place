@@ -1,6 +1,6 @@
 <template>
     <div class="py-5">
-        <nav class="flex gap-2 items-center text-sm">
+        <nav class="flex gap-1 lg:gap-2 items-center flex-wrap text-xs lg:text-sm">
             <Button.Native
                 :icon="{
                     name: 'PhArrowLeft',

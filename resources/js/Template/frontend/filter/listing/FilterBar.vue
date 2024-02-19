@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between gap-4">
+    <div class="flex flex-col lg:flex-row justify-between gap-4">
         <div class="flex gap-2.5 items-center flex-wrap">
             <Button.Primary
                 :icon="{

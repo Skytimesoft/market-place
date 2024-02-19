@@ -1,7 +1,7 @@
 <template>
     <div class="border-b border-borderDark/20 py-5">
         <div class="custom-container">
-            <div class="flex gap-2 items-center justify-center">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 justify-center items-center">
                 <div>
                     <Input.Native 
                         placeholder="Search categories"
@@ -32,7 +32,7 @@
                         class="border-borderDark/20 bg-white"
                     />
                 </div>
-                <div>
+                <div class="mt-2 lg:mt-0 col-span-2 lg:col-span-1 text-center lg:text-left">
                     <Button.Primary>
                         Clear filters
                     </Button.Primary>

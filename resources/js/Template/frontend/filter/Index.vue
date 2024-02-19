@@ -1,11 +1,11 @@
 <template>
     <Layout>
-        <div class="px-5 pb-12">
+        <div class="pb-12">
             <TopSearchBar />
             <div class="custom-container">
                 <div class="flex justify-between items-center gap-4">
                     <Breadcrumbs />
-                    <div>
+                    <div class="flex-shrink-0">
                         <Button.Primary
                             :icon="{
                                 name: 'PhBellRinging',
@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <div class="py-10 flex items-start gap-8">
+                <div class="py-10 flex flex-col lg:flex-row items-start gap-8">
                     <Sidebar />
                     <Listing />
                 </div>
