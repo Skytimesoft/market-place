@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-10 flex gap-2 justify-end">
+    <div class="mt-4 lg:mt-10 flex gap-2 justify-end">
         <Button.Primary :icon="{
             name: 'PhPlus',
             size: 16
@@ -23,8 +23,8 @@
         :modelValue="isModalOpen"
         scrollable
     >
-        <div class="bg-white rounded w-[700px]">
-            <div class="py-4 px-6 border-b border-borderDark/20 flex justify-between items-center">
+        <div class="bg-white rounded w-[95%] m-auto lg:w-[700px]">
+            <div class="py-4 px-4 lg:px-6 border-b border-borderDark/20 flex justify-between items-center">
                 <h4 class="text-xl font-medium">More Filters</h4>
                 <Icon 
                     name="PhXCircle" 

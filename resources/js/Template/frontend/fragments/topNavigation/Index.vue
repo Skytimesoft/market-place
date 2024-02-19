@@ -3,7 +3,7 @@
         <div class="custom-container">
             <nav class="flex justify-between items-center">
                 <LeftContent />
-                <RightContent />
+                <RightContent class="hidden lg:block" />
             </nav>
         </div>
     </header>

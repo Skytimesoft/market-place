@@ -1,8 +1,8 @@
 <template>
     <div class="grow">
-        <div class="p-6 bg-white shadow-md rounded">
+        <div class="p-4 lg:p-6 bg-white shadow-md rounded">
             <form>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
                     <div>
                         <Select.Native 
                             :options="brands"
@@ -21,7 +21,7 @@
                         />
                     </div>
 
-                    <div>
+                    <div class="col-span-2 md:col-span-1">
                         <Select.Native 
                             :options="years"
                             itemValue="name"
@@ -30,28 +30,28 @@
                         />
                     </div>
 
-                    <div>
+                    <div class="col-span-2 md:col-span-1">
                         <Radio.Group>
-                            <div>
+                            <div class="grow">
                                 <Radio.Input 
                                     radioIconNone
-                                    radioPadding="px-4 py-2 block"
+                                    radioPadding="px-2 py-2 block text-center"
                                     label="All"
                                     value="all"
                                 />
                             </div>
-                            <div>
+                            <div class="grow">
                                 <Radio.Input 
                                     radioIconNone
-                                    radioPadding="px-4 py-2 block"
+                                    radioPadding="px-2 py-2 block text-center"
                                     label="Purchase"
                                     value="purchase"
                                 />
                             </div>
-                            <div>
+                            <div class="grow">
                                 <Radio.Input 
                                     radioIconNone
-                                    radioPadding="px-4 py-2 block"
+                                    radioPadding="px-2 py-2 block text-center"
                                     label="Lease"
                                     value="lease"
                                 />
@@ -76,10 +76,8 @@
                             v-model="selectedMaterial"
                         />
                     </div>
-
                 </div>
             </form>
-
             <Buttons />
         </div>
     </div>

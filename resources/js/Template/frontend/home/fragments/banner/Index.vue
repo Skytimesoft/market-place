@@ -3,7 +3,7 @@
         <Img 
             src="/images/home/banner.jpg" 
             alt="Banner image"
-            class="h-[350px]"
+            class="h-[200px] lg:h-[350px]"
             imgClass="object-top" 
         />
     </section>

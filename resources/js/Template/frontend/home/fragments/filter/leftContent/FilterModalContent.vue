@@ -1,7 +1,7 @@
 <template>
-    <div class="py-4 px-6">
-        <form class="space-y-4">
-            <div class="grid grid-cols-2 gap-4">
+    <div class="py-4 px-4 lg:px-6">
+        <form class="space-y-3 lg:space-y-4">
+            <div class="grid grid-cols-2 gap-3 lg:gap-4">
                 <div>
                     <label class="mb-1 text-black/60 font-semibold block">Brand</label>
                     <Select.Native 
@@ -26,18 +26,18 @@
             <div>
                 <label class="mb-1 text-black/60 font-semibold block">Type of advertisement</label>
                 <Radio.Group>
-                    <div>
+                    <div class="grow">
                         <Radio.Input 
                             radioIconNone
-                            radioPadding="px-4 py-2 block"
+                            radioPadding="p-2 block text-center"
                             label="For sale"
                             value="forSale"
                         />
                     </div>
-                    <div>
+                    <div class="grow">
                         <Radio.Input 
                             radioIconNone
-                            radioPadding="px-4 py-2 block"
+                            radioPadding="p-2 block text-center"
                             label="Lease"
                             value="lease"
                         />
@@ -45,7 +45,7 @@
                 </Radio.Group>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 gap-3 lg:gap-4">
                 <div>
                     <label class="mb-1 text-black/60 font-semibold block">Price (of)</label>
                     <div class="flex relative">
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 gap-3 lg:gap-4">
                 <div>
                     <label class="mb-1 text-black/60 font-semibold block">Year (of)</label>
                     <Select.Native 
@@ -83,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 gap-3 lg:gap-4">
                 <div>
                     <label class="mb-1 text-black/60 font-semibold block">Mileage(of)</label>
                     <div class="flex relative">

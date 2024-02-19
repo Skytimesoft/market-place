@@ -7,7 +7,7 @@ body {
 }
 
 .custom-container {
-    @apply max-w-[980px] m-auto;
+    @apply max-w-[980px] mx-4 lg:mx-auto;
 }
 
 .ellipsis-text {
