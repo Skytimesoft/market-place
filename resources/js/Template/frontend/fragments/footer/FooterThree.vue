@@ -3,7 +3,7 @@
         <h4 class="mb-4 text-xl font-bold text-white">Useful links</h4>
         <ul class="space-y-1">
             <li v-for="link in quickLinks" :key="link?.name" class="hover:underline hover:text-white">
-                <Link :to="link?.path">
+                <Link :href="link?.path">
                     {{ link?.name }}
                 </Link>
             </li>
@@ -17,7 +17,7 @@ import { Link } from "@inertiajs/vue3"
 const quickLinks = [
     {
         name: 'Privacy statement',
-        path: ''
+        path: '/privacy-policy'
     },
     {
         name: 'Cookie Policy',

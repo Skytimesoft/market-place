@@ -5,22 +5,19 @@
                 <div class="flex items-start gap-5">
                     <div class="flex-shrink-0 w-[300px] bg-white shadow-md rounded p-4">
                         <ul class="space-y-2">
-                            <li>
-                                <Link
-                                    href="#jouw"
-                                    class="text-sm text-primary hover:underline"
-                                >
-                                    Jouw persoonsgegevens bij Marktplaats
-                                </Link>
-                            </li>
                             <li 
-                                v-for="n in 5"
+                                v-for="n in 7"
                             >
                                 <Link
                                     href="#lorem"
-                                    class="text-sm text-primary hover:underline"
+                                    class="text-sm text-primary hover:underline flex items-center gap-1.5"
                                 >
-                                    Lorem, ipsum dolor Lorem, ipsum dolor Lorem, ipsum dolor
+                                    <Icon 
+                                        name="PhCaretRight"  
+                                    />
+                                    <span>
+                                        Lorem, ipsum dolor Lorem, ipsum dolor Lorem, ipsum dolor
+                                    </span>
                                 </Link>
                             </li>
                         </ul>
@@ -96,6 +93,7 @@
 
 <script setup>
 import { Link } from "@inertiajs/vue3"
+import { Icon } from '@/plugins/ui'
 import Layout from '@/Template/frontend/layout/Index.vue'
 </script>
 
