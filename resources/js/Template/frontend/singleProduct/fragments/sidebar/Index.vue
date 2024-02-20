@@ -1,5 +1,5 @@
 <template>
-    <aside class="flex-shrink-0 w-[300px]">
+    <aside class="flex-shrink-0 lg:w-[300px]">
         <div class="bg-white shadow-md rounded divide-y divide-borderLight">
             <SellerInfo />
             <Websites />

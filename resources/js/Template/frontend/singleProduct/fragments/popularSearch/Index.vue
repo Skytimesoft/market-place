@@ -2,7 +2,7 @@
     <section class="py-8">
         <div class="custom-container">
             <h4 class="text-lg font-bold mb-4">Popular search terms</h4>
-            <ul class="columns-5 gap-x-7">
+            <ul class="columns-2 lg:columns-5 gap-x-4 lg:gap-x-7">
                 <li 
                     v-for="n in 30" 
                     :key="index"

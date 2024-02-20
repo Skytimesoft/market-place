@@ -7,7 +7,7 @@
             </div>
             <div class="pb-8">
                 <div class="custom-container">
-                    <div class="flex items-start gap-5">
+                    <div class="flex flex-col lg:flex-row items-start gap-5">
                         <Listing />
                         <Sidebar />
                     </div>

@@ -1,6 +1,6 @@
 <template>
-    <div class="flex justify-between items-center gap-3 pt-1.5 pb-3 mb-3 border-b border-borderLight">
-        <div class="flex items-center gap-7">
+    <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-3 pt-1.5 pb-3 mb-3 border-b border-borderLight">
+        <div class="flex items-center gap-4 lg:gap-7">
             <p 
                 v-for="data in metaData"
                 :key="data?.content"

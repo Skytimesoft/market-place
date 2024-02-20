@@ -1,7 +1,7 @@
 <template>
     <section class="bg-white rounded py-8">
         <div class="custom-container">
-            <div class="grid grid-cols-6 gap-7">
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 lg:gap-7">
                 <ul 
                     v-for="category in categories" 
                     :key="category?.title"

@@ -1,6 +1,6 @@
 <template>
     <div class="p-5">
-        <div class="flex items-center gap-3">
+        <div class="flex flex-col lg:flex-row gap-3">
             <Img
                 src="https://cdn.ebayclassifieds.net/bff/static/vendor/hz-web-ui/mp/assets/trust-and-safety/negociate-cars.3543c62a.svg"
                 alt="Image"

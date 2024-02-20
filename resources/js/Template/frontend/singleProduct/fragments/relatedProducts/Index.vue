@@ -11,7 +11,7 @@
                 </Link>
             </div>
 
-            <div class="grid grid-cols-5 gap-4">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
                 <ProductCard 
                     v-for="item in products" 
                     :key="index" 

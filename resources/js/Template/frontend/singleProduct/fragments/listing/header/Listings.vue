@@ -1,9 +1,9 @@
 <template>
-    <ul class="flex divide-x divide-borderLight">
+    <ul class="grid grid-cols-2 gap-4 lg:gap-0 lg:flex lg:divide-x lg:divide-borderLight">
         <li 
             v-for="item in items"
             :key="items?.title"
-            class="px-5 first:pl-0 last:pr-0"
+            class="lg:px-5 first:pl-0 last:pr-0"
         >
             <h5 class="text-xs text-content mb-0.5">{{ item?.title }}</h5>
             <p class="text-sm font-semibold">{{ item?.content }}</p>

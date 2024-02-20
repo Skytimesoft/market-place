@@ -1,9 +1,9 @@
 <template>
-    <ul class="grid grid-cols-3 gap-5">
+    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-5">
         <li 
             v-for="item in items"
             :key="items?.title"
-            class="flex items-center gap-3 first:col-span-3"
+            class="flex items-center gap-3 first:col-span-2 lg:first:col-span-3"
         >
             <Icon
                 :name="item?.iconName"
