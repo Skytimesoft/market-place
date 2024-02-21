@@ -1,7 +1,7 @@
 <template>
     <div class="flex gap-4 items-center">
         <Logo />
-        <ul class="flex items-start">
+        <ul class="hidden lg:flex items-start">
             <li 
                 v-for="leftMenu of leftMenus" 
                 :key="leftMenu?.label" 

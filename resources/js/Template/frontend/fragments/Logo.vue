@@ -3,7 +3,7 @@
         <Button.Native 
             v-if="!footer" 
             href="/" 
-            class="block w-[120px]"
+            class="block w-[90px] lg:w-[120px]"
         >
             <Img
                 src="https://nimd.org/wp-content/uploads/2019/03/DEMO-Logo-Final.png"

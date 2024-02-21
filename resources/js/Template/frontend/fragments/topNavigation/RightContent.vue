@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden lg:flex gap-4 items-center">
+    <div class="flex gap-4 items-center">
         <ul class="flex items-start gap-1">
             <li 
                 v-for="rightMenu of rightMenus" 
@@ -14,7 +14,7 @@
                         :name="rightMenu?.icon" 
                         :size="16" 
                     />
-                    <span class="text-xs text-primary">
+                    <span class="hidden lg:block text-xs text-primary">
                         {{ rightMenu?.label }}
                     </span>
                 </Link>
@@ -27,7 +27,7 @@
                 weight: 'fill'
             }"
         >
-            <span>Place advertisement</span>
+            <span class="hidden lg:block">Place advertisement</span>
         </Button.Primary>
     </div>
 </template>
